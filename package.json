@@ -19,6 +19,7 @@
         "postcss-import": "^14.0.1"
     },
     "dependencies": {
+        "boxicons": "^2.1.4",
         "pace-js": "^1.2.4"
     }
 }

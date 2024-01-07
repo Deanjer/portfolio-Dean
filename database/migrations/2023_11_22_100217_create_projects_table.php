@@ -18,9 +18,13 @@ class CreateProjectsTable extends Migration
             $table->string('title');
             $table->text('short');
             $table->text('text');
-            $table->text('image');
+            $table->text('image')->nullable(); // Assuming image can be nullable
+            $table->text('code')->nullable();
             $table->timestamps();
         });
+        // Schema::table('projects', function (Blueprint $table){
+        //     $table->text('code')->nullable();
+        // });
     }
 
     /**
@@ -33,3 +37,4 @@ class CreateProjectsTable extends Migration
         Schema::dropIfExists('projects');
     }
 }
+
